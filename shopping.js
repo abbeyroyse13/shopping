@@ -88,4 +88,10 @@ addToShoppingList(oranges)
 addToShoppingList(tortillas)
 addToShoppingList(popsicles)
 
+for (const grocery of groceries) {
+    if (grocery.price >= 8) {
+        console.log(grocery.price)
+    }
+}
+
 console.log(groceries);
