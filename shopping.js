@@ -38,4 +38,54 @@ for (const grocery of groceries) {
     `)
 }
 
+const addToShoppingList = (newGroceries) => {
+    const lastIndex = groceries.length - 1
+    const lastItemId = groceries[lastIndex].id
+    const newId = lastItemId + 1
+
+    newGroceries.id = newId
+    groceries.push(newGroceries)
+}
+
+const juice = {
+    food: "juice",
+    type: "apple",
+    price: 3.05,
+    dateCreated: "June 1st, 2021"
+}
+
+const cookies = {
+    food: "cookies",
+    type: "oreo",
+    price: 5.05,
+    dateCreated: "June 1st, 2021"
+}
+
+const oranges = {
+    food: "oranges",
+    type: "mandarin",
+    price: 2.00,
+    dateCreated: "June 1st, 2021"
+}
+
+const tortillas = {
+    food: "tortillas",
+    type: "original",
+    price: 3.00,
+    dateCreated: "June 1st, 2021"
+}
+
+const popsicles = {
+    food: "popsicles",
+    type: "blue raspberry",
+    price: 1.00,
+    dateCreated: "June 1st, 2021"
+}
+
+addToShoppingList(juice)
+addToShoppingList(cookies)
+addToShoppingList(oranges)
+addToShoppingList(tortillas)
+addToShoppingList(popsicles)
+
 console.log(groceries);
